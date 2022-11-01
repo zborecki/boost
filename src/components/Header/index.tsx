@@ -1,6 +1,6 @@
-// import colors from '../../theme/colors';
 import { useTheme } from 'styled-components';
 import { BaseProps } from '../../types/props';
+import Button from '../Button';
 import Navigation from '../Navigation';
 
 const Header = ({ className }: BaseProps): JSX.Element => {
@@ -31,7 +31,14 @@ const Header = ({ className }: BaseProps): JSX.Element => {
         }
         className={className}
       />
-      <div className={`${className}__button`}>Button</div>
+      <Button
+        link="/"
+        size="standard"
+        variant="primary"
+        className={className}
+      >
+        Use template
+      </Button>
     </header>
   );
 };
