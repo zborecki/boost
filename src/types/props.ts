@@ -4,6 +4,16 @@ export interface BaseProps {
   className: string;
 }
 
+export interface ButtonProps extends BaseProps, ButtonWrapperProps {
+  children: string;
+  link: string;
+}
+
+export interface ButtonWrapperProps {
+  size: 'standard';
+  variant: 'primary'
+}
+
 export interface NavigationLinkProps {
   fontcolor: {
     default: string;
