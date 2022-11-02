@@ -1,4 +1,5 @@
 import { INavigationItem } from './common';
+import { WelcomeType } from './database';
 
 export interface BaseProps {
   className: string;
@@ -10,7 +11,7 @@ export interface ButtonProps extends BaseProps, ButtonWrapperProps {
 }
 
 export interface ButtonWrapperProps {
-  size: 'standard';
+  size: 'standard' | 'large';
   variant: 'primary'
 }
 
@@ -43,4 +44,8 @@ export interface NavigationListProps {
 export interface NavigationProps extends BaseProps {
   style: NavigationListProps & NavigationLinkProps;
   data: INavigationItem[];
+}
+
+export interface SectionProps {
+  data: WelcomeType;
 }

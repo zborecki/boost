@@ -1,4 +1,5 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Home from './routes/Home';
 import Layout from './routes/Layout';
 
 const App = (): JSX.Element => (
@@ -8,7 +9,7 @@ const App = (): JSX.Element => (
       children: [
         {
           path: '/',
-          element: <div>Home</div>
+          element: <Home />
         },
         {
           path: '*',
