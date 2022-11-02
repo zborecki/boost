@@ -12,11 +12,22 @@ export default {
     }
   },
   header: {
+    background: colors.white,
     navigation: {
       fontcolor: {
         default: colors.text,
         active: colors.purpleDark
       }
+    }
+  },
+  logo: {
+    primary: {
+      logomark: colors.purple,
+      logotype: colors.text
+    },
+    secondary: {
+      logomark: colors.white,
+      logotype: colors.white
     }
   }
 } as DefaultTheme;

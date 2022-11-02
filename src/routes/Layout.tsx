@@ -1,13 +1,17 @@
 import { Outlet } from 'react-router-dom';
 import Header from '../components/Header';
+import { Wrapper } from '../components/styled.components';
 
 const Layout = (): JSX.Element => (
   <>
     <Header className="header" />
-    <main className="main">
+    <Wrapper
+      className="main"
+      as="main"
+    >
       <Outlet />
-    </main>
-    <footer className="footer">footer</footer>
+      <footer className="footer">footer</footer>
+    </Wrapper>
   </>
 );
 

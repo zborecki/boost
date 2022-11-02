@@ -7,5 +7,10 @@ export default createGlobalStyle`
 
   body {
     font-family: 'Manrope', sans-serif;
+    background-color: #cacaca;
+  }
+
+  img {
+    width: 100%;
   }
 `;
