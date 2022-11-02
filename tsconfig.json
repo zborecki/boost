@@ -23,5 +23,6 @@
   "include": [
     "src",
     "defaultTheme.d.ts",
+    "assets.d.ts",
   ]
 }

@@ -1,17 +1,23 @@
 import { useTheme } from 'styled-components';
 import { BaseProps } from '../../types/props';
 import Button from '../Button';
+import Logo from '../Logo';
 import Navigation from '../Navigation';
+import { HeaderInteractive, HeaderWrapper } from './header.style';
 
 const Header = ({ className }: BaseProps): JSX.Element => {
   const { header } = useTheme();
   const { navigation } = header;
 
   return (
-    <header className={className}>
-      <div className={`${className}__logo`}>Logo</div>
-      <Navigation
-        style={
+    <HeaderWrapper className={className}>
+      <Logo
+        variant="primary"
+        className={`${className}__logo`}
+      />
+      <HeaderInteractive className={`${className}__interactive`}>
+        <Navigation
+          style={
           {
             horizontal: true,
             gap: 30,
@@ -21,7 +27,7 @@ const Header = ({ className }: BaseProps): JSX.Element => {
             }
           }
         }
-        data={
+          data={
           [
             {
               label: 'Home',
@@ -29,17 +35,18 @@ const Header = ({ className }: BaseProps): JSX.Element => {
             }
           ]
         }
-        className={className}
-      />
-      <Button
-        link="/"
-        size="standard"
-        variant="primary"
-        className={className}
-      >
-        Use template
-      </Button>
-    </header>
+          className={className}
+        />
+        <Button
+          link="/"
+          size="standard"
+          variant="primary"
+          className={className}
+        >
+          Use template
+        </Button>
+      </HeaderInteractive>
+    </HeaderWrapper>
   );
 };
 

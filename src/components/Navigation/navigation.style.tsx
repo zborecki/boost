@@ -9,8 +9,13 @@ export const NavigationLink = styled(NavLink)<NavigationLinkProps>`
   font-size: 16px;
   line-height: 1em;
   color: ${({ fontcolor }) => fontcolor.default};
+  transition: color 0.2s ease-out;
 
   &.active {
+    color: ${({ fontcolor }) => fontcolor.active};
+  }
+  
+  &:hover {
     color: ${({ fontcolor }) => fontcolor.active};
   }
 `;

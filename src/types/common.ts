@@ -19,6 +19,13 @@ export enum FontWeight {
   'ExtraBold' = 800
 }
 
+export type Logos = {
+  [key in 'primary' | 'secondary']: {
+    logomark: string;
+    logotype: string;
+  }
+};
+
 export interface INavigationItem {
   label: string;
   link: string;

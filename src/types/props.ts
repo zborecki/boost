@@ -14,6 +14,20 @@ export interface ButtonWrapperProps {
   variant: 'primary'
 }
 
+export interface ImageProps extends BaseProps, ImageWrapperProps {
+  src: string;
+  alt: string;
+}
+
+export interface ImageWrapperProps {
+  width: number;
+  height: number;
+}
+
+export interface LogoProps {
+  variant: 'primary' | 'secondary';
+}
+
 export interface NavigationLinkProps {
   fontcolor: {
     default: string;
