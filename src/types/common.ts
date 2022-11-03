@@ -9,7 +9,7 @@ export type Buttons = {
 };
 
 export type Colors = {
-  [key in 'text' | 'purpleDark' | 'purple' | 'white' | 'red']: string
+  [key in 'text' | 'purpleDark' | 'purple' | 'white' | 'red' | 'textLight' | 'green']: string
 };
 
 export enum FontWeight {

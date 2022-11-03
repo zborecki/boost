@@ -31,6 +31,9 @@ export default {
     }
   },
   welcome: {
-    feature: colors.purple
+    feature: colors.purple,
+    headline: colors.text,
+    text: colors.textLight,
+    background: colors.white
   }
 } as DefaultTheme;

@@ -1,3 +1,4 @@
+import Loading from '../components/Loading';
 import Welcome from '../components/Welcome';
 import { useHome } from '../services';
 
@@ -5,10 +6,13 @@ const Home = (): JSX.Element => {
   const { data: { welcome }, isLoading } = useHome();
 
   return (
-    isLoading ? <span>Loading...</span>
+    isLoading ? <Loading />
       : (
         <>
-          <Welcome data={welcome} />
+          <Welcome
+            data={welcome}
+            className="welcome"
+          />
           <div />
         </>
       )

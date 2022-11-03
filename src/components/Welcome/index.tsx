@@ -1,36 +1,53 @@
 import { useTheme } from 'styled-components';
 import { SectionProps } from '../../types/props';
 import Button from '../Button';
-import { Feature } from '../styled.components';
+import { Feature, Headline, Paragraph } from '../styled.components';
+import { WelcomeIntroduction } from './welcome.style';
 
 const Welcome = (
   {
     data: {
       feature, headline, button, text
-    }
+    },
+    className
   }: SectionProps
 ): JSX.Element => {
   const { welcome } = useTheme();
 
   return (
-    <div>
+    <WelcomeIntroduction className={className}>
       <Feature
         color={welcome.feature}
         marginBottom={20}
+        className={`${className}__feature`}
       >
         { feature }
       </Feature>
-      <p>{ headline }</p>
-      <p>{ text }</p>
+      <Headline
+        level={1}
+        color={welcome.headline}
+        marginBottom={20}
+        className={`${className}__headline`}
+      >
+        { headline }
+      </Headline>
+      <Paragraph
+        size="large"
+        color={welcome.text}
+        marginBottom={20}
+        className={`${className}__text`}
+      >
+        { text }
+      </Paragraph>
       <Button
         link="/"
         size="large"
         variant="primary"
-        className="btn"
+        className={className}
       >
         { button }
       </Button>
-    </div>
+    </WelcomeIntroduction>
   );
 };
 

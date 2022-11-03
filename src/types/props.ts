@@ -15,6 +15,10 @@ export interface ButtonWrapperProps {
   variant: 'primary'
 }
 
+export interface HeadlineProps extends TypographyProps {
+  level: 1 | 2 | 3 | 4 | 5 | 6;
+}
+
 export interface ImageProps extends BaseProps, ImageWrapperProps {
   src: string;
   alt: string;
@@ -46,11 +50,15 @@ export interface NavigationProps extends BaseProps {
   data: INavigationItem[];
 }
 
-export interface SectionProps {
+export interface ParagraphProps extends TypographyProps {
+  size: 'small' | 'standard' | 'large';
+}
+
+export interface SectionProps extends BaseProps {
   data: WelcomeType;
 }
 
 export interface TypographyProps {
   color: string;
-  marginBottom: number;
+  marginBottom?: number;
 }

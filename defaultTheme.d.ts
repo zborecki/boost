@@ -11,6 +11,8 @@ declare module 'styled-components' {
       navigation: NavigationLinkProps
     },
     logo: Logos,
-    welcome: WelcomeType
+    welcome: WelcomeType & {
+      background: string;
+    }
   }
 }
