@@ -1,9 +1,11 @@
 import { Colors } from '../types/common';
 
 export default {
-  purple: '#8800FF',
+  purple: '#7421FC',
   red: '#F56687',
-  purpleDark: '#1300FF',
+  purpleDark: '#451297',
   text: '#19154E',
-  white: '#FFFFFF'
+  textLight: '#5B5E76',
+  white: '#FFFFFF',
+  green: '#7DEDAA'
 } as Colors;

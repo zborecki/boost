@@ -1,6 +1,7 @@
 import 'styled-components';
 import { Buttons, Logos } from './src/types/common';
-import { NavigationLinkProps } from './src/types/props';
+import { WelcomeType } from './src/types/database';
+import { LoadingProps, NavigationLinkProps } from './src/types/props';
 
 declare module 'styled-components' {
   export interface DefaultTheme {
@@ -9,6 +10,10 @@ declare module 'styled-components' {
       background: string,
       navigation: NavigationLinkProps
     },
-    logo: Logos
+    loading: LoadingProps,
+    logo: Logos,
+    welcome: WelcomeType & {
+      background: string;
+    }
   }
 }

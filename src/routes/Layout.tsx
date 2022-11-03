@@ -10,7 +10,7 @@ const Layout = (): JSX.Element => (
       as="main"
     >
       <Outlet />
-      <footer className="footer">footer</footer>
+      <footer className="footer">--- footer ---</footer>
     </Wrapper>
   </>
 );

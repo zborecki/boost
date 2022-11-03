@@ -20,6 +20,10 @@ export default {
       }
     }
   },
+  loading: {
+    background: colors.purple,
+    color: colors.green
+  },
   logo: {
     primary: {
       logomark: colors.purple,
@@ -29,5 +33,11 @@ export default {
       logomark: colors.white,
       logotype: colors.white
     }
+  },
+  welcome: {
+    feature: colors.purple,
+    headline: colors.text,
+    text: colors.textLight,
+    background: colors.white
   }
 } as DefaultTheme;
