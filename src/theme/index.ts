@@ -29,5 +29,8 @@ export default {
       logomark: colors.white,
       logotype: colors.white
     }
+  },
+  welcome: {
+    feature: colors.purple
   }
 } as DefaultTheme;

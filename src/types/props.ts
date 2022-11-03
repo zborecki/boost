@@ -49,3 +49,8 @@ export interface NavigationProps extends BaseProps {
 export interface SectionProps {
   data: WelcomeType;
 }
+
+export interface TypographyProps {
+  color: string;
+  marginBottom: number;
+}

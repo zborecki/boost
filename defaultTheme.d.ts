@@ -1,5 +1,6 @@
 import 'styled-components';
 import { Buttons, Logos } from './src/types/common';
+import { WelcomeType } from './src/types/database';
 import { NavigationLinkProps } from './src/types/props';
 
 declare module 'styled-components' {
@@ -9,6 +10,7 @@ declare module 'styled-components' {
       background: string,
       navigation: NavigationLinkProps
     },
-    logo: Logos
+    logo: Logos,
+    welcome: WelcomeType
   }
 }
