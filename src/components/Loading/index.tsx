@@ -1,8 +1,12 @@
+import { LoadingProps } from '../../types/props';
 import { LoadingCircle, LoadingWrapper } from './loading.style';
 
-const Loading = (): JSX.Element => (
+const Loading = ({ background, color }: LoadingProps): JSX.Element => (
   <LoadingWrapper>
-    <LoadingCircle />
+    <LoadingCircle
+      background={background}
+      color={color}
+    />
   </LoadingWrapper>
 );
 

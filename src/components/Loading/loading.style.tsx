@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import colors from '../../theme/colors';
+import { LoadingProps } from '../../types/props';
 
 export const LoadingWrapper = styled.div`
   display: flex;
@@ -7,12 +7,12 @@ export const LoadingWrapper = styled.div`
   margin: 36px 0px;
 `;
 
-export const LoadingCircle = styled.div`
+export const LoadingCircle = styled.div<LoadingProps>`
   width: 36px;
   height: 36px;
-  border: 4px solid ${colors.purple};
+  border: 4px solid ${({ background }) => background};
   border-radius: 50%;
-  border-right: 4px solid ${colors.green};
+  border-right: 4px solid ${({ color }) => color};
 
   animation-name: rotation;
   animation-duration: 850ms;

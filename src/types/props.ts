@@ -29,6 +29,10 @@ export interface ImageWrapperProps {
   height: number;
 }
 
+export type LoadingProps = {
+  [key in 'background' | 'color']: string;
+};
+
 export interface LogoProps {
   variant: 'primary' | 'secondary';
 }

@@ -20,6 +20,10 @@ export default {
       }
     }
   },
+  loading: {
+    background: colors.purple,
+    color: colors.green
+  },
   logo: {
     primary: {
       logomark: colors.purple,
