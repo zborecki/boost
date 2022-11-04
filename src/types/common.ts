@@ -1,4 +1,4 @@
-export type Buttons = {
+export type ButtonType = {
   [key in 'primary']: {
     background: {
       default: string;
@@ -8,25 +8,26 @@ export type Buttons = {
   }
 };
 
-export type Colors = {
-  [key in 'text' | 'purpleDark' | 'purple' | 'white' | 'red' | 'textLight' | 'green']: string
-};
-
-export enum FontWeight {
+export enum FontWeightType {
   'Medium' = 500,
   'SemiBold' = 600,
   'Bold' = 700,
   'ExtraBold' = 800
 }
 
-export type Logos = {
+export type ImageType = {
+  alt: string;
+  src: string;
+};
+
+export type LogoType = {
   [key in 'primary' | 'secondary']: {
     logomark: string;
     logotype: string;
   }
 };
 
-export interface INavigationItem {
+export type NavigationItemType = {
   label: string;
   link: string;
-}
+};

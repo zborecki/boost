@@ -1,5 +1,5 @@
 import { useTheme } from 'styled-components';
-import { SectionProps } from '../../types/props';
+import { WelcomeProps } from '../../types/props';
 import Button from '../Button';
 import { Feature, Headline, Paragraph } from '../styled.components';
 import { WelcomeIntroduction } from './welcome.style';
@@ -10,7 +10,7 @@ const Welcome = (
       feature, headline, button, text
     },
     className
-  }: SectionProps
+  }: WelcomeProps
 ): JSX.Element => {
   const { welcome } = useTheme();
 

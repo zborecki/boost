@@ -1,12 +1,12 @@
 import styled from 'styled-components';
-import { FontWeight } from '../types/common';
+import { FontWeightType } from '../types/common';
 import { HeadlineProps, ParagraphProps, TypographyProps } from '../types/props';
 
 export const Feature = styled.p<TypographyProps>`
   margin: 0px;
   margin-bottom: ${({ marginBottom }) => (marginBottom ? `${marginBottom}px` : '0px')};
   text-transform: uppercase;
-  font-weight: ${FontWeight.ExtraBold};
+  font-weight: ${FontWeightType.ExtraBold};
   font-size: 16px;
   line-height: 1.5em;
   letter-spacing: 0.01em;
@@ -24,7 +24,7 @@ export const Headline = styled.h1.attrs(({ level }: HeadlineProps) => ({
   margin: 0;
   margin-bottom: ${({ marginBottom }) => (marginBottom ? `${marginBottom}px` : '0px')};
   color: ${({ color }) => color};
-  font-weight: ${({ level }) => (level === 6 ? FontWeight.Bold : FontWeight.ExtraBold)};
+  font-weight: ${({ level }) => (level === 6 ? FontWeightType.Bold : FontWeightType.ExtraBold)};
   font-size: ${
   ({ level }) => (
     (level === 1 && '68px')
@@ -56,7 +56,7 @@ export const Paragraph = styled.p<ParagraphProps>`
   margin: 0;
   margin-bottom: ${({ marginBottom }) => (marginBottom ? `${marginBottom}px` : '0px')};
   color: ${({ color }) => color};
-  font-weight: ${FontWeight.Medium};
+  font-weight: ${FontWeightType.Medium};
   font-size: ${
   ({ size }) => (
     (size === 'small' && '14px')

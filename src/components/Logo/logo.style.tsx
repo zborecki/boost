@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { FontWeight } from '../../types/common';
+import { FontWeightType } from '../../types/common';
 import { LogoProps } from '../../types/props';
 
 export const LogoWrapper = styled.div`
@@ -10,7 +10,7 @@ export const LogoWrapper = styled.div`
 export const Logotype = styled.p<LogoProps>`
   margin: 0px;
   margin-left: 10px;
-  font-weight: ${FontWeight.ExtraBold};
+  font-weight: ${FontWeightType.ExtraBold};
   font-size: 20px;
   line-height: 19.2px;
   letter-spacing: -0.003em;
