@@ -1,7 +1,7 @@
 export type HomeType = {
-  welcome: WelcomeType
+  welcome: WelcomeTextType
 };
 
-export type WelcomeType = {
+export type WelcomeTextType = {
   [key in 'button' | 'feature' | 'headline' | 'text']: string
 };

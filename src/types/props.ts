@@ -1,5 +1,5 @@
-import { INavigationItem } from './common';
-import { WelcomeType } from './database';
+import { NavigationItemType } from './common';
+import { WelcomeTextType } from './database';
 
 export interface BaseProps {
   className: string;
@@ -17,11 +17,6 @@ export interface ButtonWrapperProps {
 
 export interface HeadlineProps extends TypographyProps {
   level: 1 | 2 | 3 | 4 | 5 | 6;
-}
-
-export interface ImageProps extends BaseProps, ImageWrapperProps {
-  src: string;
-  alt: string;
 }
 
 export interface ImageWrapperProps {
@@ -51,18 +46,18 @@ export interface NavigationListProps {
 
 export interface NavigationProps extends BaseProps {
   style: NavigationListProps & NavigationLinkProps;
-  data: INavigationItem[];
+  data: NavigationItemType[];
 }
 
 export interface ParagraphProps extends TypographyProps {
   size: 'small' | 'standard' | 'large';
 }
 
-export interface SectionProps extends BaseProps {
-  data: WelcomeType;
-}
-
 export interface TypographyProps {
   color: string;
   marginBottom?: number;
+}
+
+export interface WelcomeProps extends BaseProps {
+  data: WelcomeTextType
 }

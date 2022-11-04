@@ -1,11 +1,11 @@
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
-import { FontWeight } from '../../types/common';
+import { FontWeightType } from '../../types/common';
 import { NavigationLinkProps, NavigationListProps } from '../../types/props';
 
 export const NavigationLink = styled(NavLink)<NavigationLinkProps>`
   text-decoration: none;
-  font-weight: ${FontWeight.SemiBold};
+  font-weight: ${FontWeightType.SemiBold};
   font-size: 16px;
   line-height: 1em;
   color: ${({ fontcolor }) => fontcolor.default};

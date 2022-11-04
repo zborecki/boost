@@ -1,5 +1,3 @@
-import { Colors } from '../types/common';
-
 export default {
   purple: '#7421FC',
   red: '#F56687',
@@ -8,4 +6,4 @@ export default {
   textLight: '#5B5E76',
   white: '#FFFFFF',
   green: '#7DEDAA'
-} as Colors;
+};

@@ -1,9 +1,10 @@
-import { ImageProps } from '../../types/props';
+import { ImageType } from '../../types/common';
+import { BaseProps, ImageWrapperProps } from '../../types/props';
 import { ImageWrapper } from './image.style';
 
 const Image = ({
   width, height, alt, src, className
-}: ImageProps): JSX.Element => (
+}: BaseProps & ImageWrapperProps & ImageType): JSX.Element => (
   <ImageWrapper
     className={`${className}__image`}
     width={width}
