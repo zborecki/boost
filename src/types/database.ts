@@ -1,5 +1,9 @@
+import { ImageType } from './common';
+
 export type HomeType = {
-  welcome: WelcomeTextType
+  welcome: WelcomeTextType & {
+    slideshow: ImageType[];
+  }
 };
 
 export type WelcomeTextType = {

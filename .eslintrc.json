@@ -53,6 +53,7 @@
       {
         "maximum": 1
       }
-    ]
+    ],
+    "react/no-array-index-key": "off"
   }
 }
