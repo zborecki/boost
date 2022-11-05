@@ -7,6 +7,7 @@ export const WelcomeIntroduction = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 100px;
 
   .welcome {
     &__text, &__headline {

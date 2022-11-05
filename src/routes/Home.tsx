@@ -5,7 +5,7 @@ import { useHome } from '../services';
 
 const Home = (): JSX.Element => {
   const { data: { welcome }, isLoading } = useHome();
-  const { loading } = useTheme();
+  const { loading, welcome: welcomeBackground } = useTheme();
 
   return (
     isLoading ? (
@@ -19,6 +19,7 @@ const Home = (): JSX.Element => {
           <Welcome
             data={welcome}
             className="welcome"
+            background={welcomeBackground}
           />
           <div />
         </>

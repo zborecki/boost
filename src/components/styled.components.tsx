@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import { FontWeightType } from '../types/common';
-import { HeadlineProps, ParagraphProps, TypographyProps } from '../types/props';
+import {
+  HeadlineProps, ParagraphProps, SectionProps, TypographyProps
+} from '../types/props';
 
 export const Feature = styled.p<TypographyProps>`
   margin: 0px;
@@ -70,6 +72,10 @@ export const Paragraph = styled.p<ParagraphProps>`
     || (size === 'large' && '1.4em')
   )};
   letter-spacing: ${({ size }) => (size === 'large' && '0.002em')};
+`;
+
+export const Section = styled.section<SectionProps>`
+  background-color: ${({ background }) => background};
 `;
 
 export const Wrapper = styled.div`

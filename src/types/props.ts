@@ -1,4 +1,4 @@
-import { NavigationItemType } from './common';
+import { ImageType, NavigationItemType } from './common';
 import { WelcomeTextType } from './database';
 
 export interface BaseProps {
@@ -53,11 +53,24 @@ export interface ParagraphProps extends TypographyProps {
   size: 'small' | 'standard' | 'large';
 }
 
+export interface SectionProps {
+  background: string;
+  marginBottom?: number;
+}
+
+export interface SlideshowProps extends BaseProps, ImageWrapperProps {
+  images: ImageType[];
+  gap: number;
+  slidesPerView: number;
+}
+
 export interface TypographyProps {
   color: string;
   marginBottom?: number;
 }
 
-export interface WelcomeProps extends BaseProps {
-  data: WelcomeTextType
+export interface WelcomeProps extends BaseProps, SectionProps {
+  data: WelcomeTextType & {
+    slideshow: ImageType[];
+  }
 }
