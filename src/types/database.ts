@@ -1,5 +1,9 @@
 import { ImageType } from './common';
 
+export type Error404Type = {
+  [key in 'button' | 'description' | 'message' | 'statusCode']: string;
+};
+
 export type HomeType = {
   welcome: WelcomeTextType & {
     slideshow: ImageType[];

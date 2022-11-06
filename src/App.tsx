@@ -1,4 +1,5 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Error404 from './components/Error404';
 import Home from './routes/Home';
 import Layout from './routes/Layout';
 
@@ -13,7 +14,7 @@ const App = (): JSX.Element => (
         },
         {
           path: '*',
-          element: <div>Error 404</div>
+          element: <Error404 />
         }
       ]
     }

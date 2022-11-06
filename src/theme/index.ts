@@ -11,6 +11,13 @@ export default {
       color: colors.white
     }
   },
+  error404: {
+    button: colors.purple,
+    message: colors.text,
+    description: colors.textLight,
+    statusCode: colors.purple,
+    background: colors.white
+  },
   header: {
     background: colors.white,
     navigation: {
