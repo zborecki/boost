@@ -33,7 +33,7 @@ const Slideshow = ({
             height={height}
             src={src}
             alt={alt}
-            className="slideshow__image"
+            className="slideshow"
           />
         </SwiperSlide>
       ))

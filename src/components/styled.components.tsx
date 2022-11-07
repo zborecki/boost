@@ -76,6 +76,7 @@ export const Paragraph = styled.p<ParagraphProps>`
 
 export const Section = styled.section<SectionProps>`
   background-color: ${({ background }) => background};
+  padding: ${({ setPadding }) => (setPadding ? '100px 0px' : '0px')};
 `;
 
 export const Wrapper = styled.div`

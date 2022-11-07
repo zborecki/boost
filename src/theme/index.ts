@@ -41,6 +41,9 @@ export default {
       logotype: colors.white
     }
   },
+  presentation: {
+    background: colors.purpleLight
+  },
   welcome: {
     feature: colors.purple,
     headline: colors.text,

@@ -1,5 +1,6 @@
 import { useTheme } from 'styled-components';
 import Loading from '../components/Loading';
+import Presentation from '../components/Presentation';
 import Welcome from '../components/Welcome';
 import { useHome } from '../services';
 
@@ -21,6 +22,7 @@ const Home = (): JSX.Element => {
             className="welcome"
             background={welcomeBackground}
           />
+          <Presentation />
           <div />
         </>
       )

@@ -15,6 +15,9 @@ declare module 'styled-components' {
     },
     loading: LoadingProps,
     logo: LogoType,
+    presentation: {
+      background: string
+    },
     welcome: WelcomeType & {
       background: string;
     }

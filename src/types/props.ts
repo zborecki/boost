@@ -56,6 +56,7 @@ export interface ParagraphProps extends TypographyProps {
 export interface SectionProps {
   background: string;
   marginBottom?: number;
+  setPadding?: boolean;
 }
 
 export interface SlideshowProps extends BaseProps, ImageWrapperProps {
